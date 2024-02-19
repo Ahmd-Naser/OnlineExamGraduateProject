@@ -9,11 +9,9 @@ namespace OnlineExam.Controllers
 {
     public class StudentAnswerController : Controller
     {
-        private readonly ApplicationDbContext _context;
         private readonly IStudentRepo _studentRepo;
-        public StudentAnswerController(ApplicationDbContext context, IStudentRepo studentRepo)
+        public StudentAnswerController(IStudentRepo studentRepo)
         {
-            _context = context;
             _studentRepo = studentRepo;
         }
 
